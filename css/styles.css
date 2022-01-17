@@ -9,13 +9,38 @@
   --address-mail-tel: rgba(255, 255, 255, 0.6);
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
 }
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /*  ----------------header-----------------  */
@@ -24,7 +49,7 @@ body {
   background: var(--some-bckgrnd-text-color);
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -32,7 +57,7 @@ body {
   color: var(--brand-color);
 }
 .logo-header {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -47,25 +72,27 @@ body {
   color: var(--title-main-color);
 }
 .header-nav-portfolio {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-main-color);
 }
 .header-nav-contacts {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-main-color);
 }
-.mail-header {
+.header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--text-main-color);
 }
-.tel-header {
+.header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -123,6 +150,16 @@ body {
 .whatwedo-section {
 }
 .whatwedo-title-one {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .whatwedo-title {
   font-weight: 700;
@@ -194,7 +231,7 @@ body {
   background: var(--accent-bckgnd-color);
 }
 .logo-footer {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -227,7 +264,17 @@ body {
 
 /*  -----------------main---------------  */
 
-.main-title {
+.portfolio-main-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /*  -----------------filters--------------  */

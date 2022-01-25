@@ -11,6 +11,14 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 p,
 h1,
 h2,
@@ -62,15 +70,22 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.logo {
+.logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+  padding: 24px 93px 25px 215px;
+  display: inline-block;
 }
-.logo-header {
+.nav-list {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.logo-header-two {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,6 +99,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-main-color);
+  vertical-align: middle;
+  display: inline-block;
 }
 .header-nav-portfolio {
   font-weight: 500;
@@ -91,6 +108,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-main-color);
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 50px;
 }
 .header-nav-contacts {
   font-weight: 500;
@@ -98,6 +118,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-main-color);
+  vertical-align: middle;
+  display: inline-block;
 }
 .header-mail {
   font-weight: 500;
@@ -128,6 +150,8 @@ img {
   background: var(--accent-bckgnd-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  align-items: center;
+  text-align: center;
 }
 .bussines {
   font-size: 44px;
@@ -136,6 +160,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--some-bckgrnd-text-color);
+  margin-bottom: 30px;
 }
 .index-button-order {
   font-family: inherit;
@@ -143,25 +168,23 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  padding-top: 30px;
-  padding-left: auto;
-  padding-right: auto;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--some-bckgrnd-text-color);
 }
 .index-button-order:hover,
 .index-button-order:focus {
   background: var(--index-btn-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.button-order-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--some-bckgrnd-text-color);
 }
 
 /*  -----------------what we do---------------  */
@@ -171,6 +194,8 @@ img {
   padding-bottom: 94px;
 }
 .whatwedo-list {
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .whatwedo-title {
   font-weight: 700;
@@ -196,8 +221,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-main-color);
+  margin-bottom: 50px;
 }
 .whatwedo-image {
+  margin-right: 30px;
 }
 
 /*  ----------------our team-----------------  */
@@ -213,14 +240,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-main-color);
+  margin-bottom: 50px;
 }
-.team-image-one {
+.team-item {
+  margin-right: 30px;
 }
-.team-image-two {
-}
-.team-image-three {
-}
-.team-image-four {
+.team-image {
+  width: 270px;
+  height: 260px;
 }
 
 .team-names {
@@ -252,10 +279,22 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--brand-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 215px;
+}
+.logo-footer-two {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--some-bckgrnd-text-color);
 }
 .footer-address {
   font-style: normal;
+  padding-left: 215px;
 }
 .address-map {
   font-size: 14px;
@@ -284,8 +323,7 @@ img {
 
 .filters-section {
   background: var(--some-bckgrnd-text-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 215px;
 }
 .list-btns {
   padding-bottom: 50px;
